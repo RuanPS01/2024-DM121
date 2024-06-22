@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Dialog</title>
+</head>
+
+<body>
+    <h1>HTML5 Dialog</h1>
+    <button onclick="mydialog.showModal()">Open Dialog</button>
+    <dialog id="mydialog">
+        <main>
+            <h2>My Dialog</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ut eius quis! Vero nostrum consectetur
+                accusantium quasi animi minima numquam placeat nulla odit, possimus, nihil similique? Cupiditate
+                perspiciatis quod officiis.</p>
+            <footer>
+                <button onclick="mydialog.close('👌')">Close</button>
+            </footer>
+        </main>
+    </dialog>
+</body>
+<script>
+    document.getElementById('mydialog').addEventListener('close', (origin) => {
+        alert('Dialog closed ' + origin.target.returnValue);
+    })
+</script>
+
+</html>
