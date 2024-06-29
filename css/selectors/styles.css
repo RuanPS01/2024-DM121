@@ -1,0 +1,23 @@
+* {
+    border: 1px solid red;
+}
+
+h1 {
+    border-color: #000;
+}
+
+#css {
+    border-color: pink;
+    margin: 10px 0;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 2px 10px;
+    border: none;
+}
+
+.test {
+    border: none;
+    font-weight: bold;
+}

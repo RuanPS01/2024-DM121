@@ -23,7 +23,7 @@
     </dialog>
 </body>
 <script>
-    document.getElementById('mydialog').addEventListener('close', (origin) => {
+    mydialog.addEventListener('close', (origin) => {
         alert('Dialog closed ' + origin.target.returnValue);
     })
 </script>
